@@ -14,13 +14,14 @@ box-sizing:border-box;
 
 body{
 font-family:'Comic Sans MS',cursive;
-background:linear-gradient(#87CEEB,#98FB98,#FFFACD);
+background:linear-gradient(to bottom,#87CEEB,#98FB98,#FFFACD);
 text-align:center;
 }
 
 header{
 background:#FFD700;
 padding:25px;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
 header h1{
@@ -29,7 +30,7 @@ font-size:3rem;
 }
 
 header p{
-font-size:1.2rem;
+font-size:1.3rem;
 color:#6A0DAD;
 }
 
@@ -72,13 +73,14 @@ background:white;
 padding:15px;
 border-radius:20px;
 width:150px;
+font-size:1.2rem;
 box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
 .tarjetas{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:25px;
 }
 
@@ -129,12 +131,14 @@ video{
 width:90%;
 max-width:800px;
 border-radius:20px;
+box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 
 footer{
-margin-top:40px;
 background:#FFD700;
 padding:20px;
+margin-top:40px;
+font-size:1.2rem;
 font-weight:bold;
 }
 </style>
@@ -144,7 +148,7 @@ font-weight:bold;
 
 <header>
 <h1>🌈 MENTE PEDAGÓGICA 🌈</h1>
-<p>Aprendiendo las Emociones - Preescolar 3</p>
+<p>Las Emociones - Preescolar 3</p>
 </header>
 
 <div class="animales">
@@ -174,6 +178,7 @@ font-weight:bold;
 
 <video controls>
 <source src="video.mp4" type="video/mp4">
+Tu navegador no soporta video.
 </video>
 </section>
 
@@ -183,23 +188,31 @@ font-weight:bold;
 <div class="tarjetas">
 
 <div class="tarjeta">
-<img src="historia de emociones.jpeg">
+<img src="historia de emociones.jpeg" alt="Cuento de las emociones">
 <h3>📖 Cuento de las Emociones</h3>
-<a class="boton" href="Cuento de las emociones.pdf" target="_blank">
-Leer Cuento
+<a class="boton" href="cuuento de las emociones.pdf" target="_blank">
+📖 Leer Cuento
 </a>
 </div>
 
 <div class="tarjeta">
-<img src="memorándum.jpeg">
+<img src="historia de emociones.jpeg" alt="Historia de emociones">
+<h3>📚 Historia de las Emociones</h3>
+<a class="boton" href="historia de emociones.jpeg" target="_blank">
+📚 Ver Historia
+</a>
+</div>
+
+<div class="tarjeta">
+<img src="memorándum.jpeg" alt="Juego de memoria">
 <h3>🧠 Juego de Memoria</h3>
 <a class="boton" href="https://wordwall.net/es/resource/114878709" target="_blank">
-Jugar
+🎮 Jugar
 </a>
 </div>
 
 <div class="tarjeta">
-<img src="laberinto.jpeg">
+<img src="laberinto.jpeg" alt="Laberinto">
 <h3>🌟 Laberinto</h3>
 <a class="boton" href="laberinto.jpeg" target="_blank">
 Resolver
@@ -207,7 +220,7 @@ Resolver
 </div>
 
 <div class="tarjeta">
-<img src="juego serpientes y escaleras.jpeg">
+<img src="juego serpientes y escaleras.jpeg" alt="Serpientes y Escaleras">
 <h3>🐍 Serpientes y Escaleras</h3>
 <a class="boton" href="juego serpientes y escaleras.jpeg" target="_blank">
 Jugar
@@ -215,15 +228,15 @@ Jugar
 </div>
 
 <div class="tarjeta">
-<img src="material didáctico.jpeg">
+<img src="material didactico.jpeg" alt="Material Didáctico">
 <h3>🎨 Material Didáctico</h3>
-<a class="boton" href="material didáctico.jpeg" target="_blank">
-Ver Material
+<a class="boton" href="material didactico.jpeg" target="_blank">
+🎨 Ver Material
 </a>
 </div>
 
 <div class="tarjeta">
-<img src="material recortable.jpeg">
+<img src="material recortable.jpeg" alt="Material Recortable">
 <h3>✂️ Material Recortable</h3>
 <a class="boton" href="material recortable.jpeg" target="_blank">
 Explorar
@@ -240,6 +253,7 @@ Abrir PDF
 
 <div class="tarjeta">
 <h3>😊 Juego de Emociones</h3>
+<p>Actividad interactiva.</p>
 <a class="boton" href="https://wordwall.net/resource/111453890" target="_blank">
 Comenzar
 </a>
@@ -247,7 +261,7 @@ Comenzar
 
 <div class="tarjeta">
 <h3>🌈 Mundo Mágico de las Emociones</h3>
-<p>Más juegos y actividades.</p>
+<p>Más juegos y actividades divertidas.</p>
 <a class="boton" href="https://sites.google.com/d/1yaa3fShVck9JpnXIRcMdEAoo7fYUpG1m/p/1H3algaa0E839GfvK2ztCVwQnmg4Pptpu/edit" target="_blank">
 🌟 ¡Explora el Mundo de las Emociones!
 </a>
@@ -270,7 +284,7 @@ Ver Video
 <div class="tarjeta">
 <h3>📱 TikTok Mente Pedagógica</h3>
 <a class="boton" href="https://www.tiktok.com/@pedagogica.menete?_r=1&_t=ZS-978E7ZS0LAr" target="_blank">
-Seguir
+Seguir en TikTok
 </a>
 </div>
 
@@ -280,11 +294,11 @@ Seguir
 <section class="seccion">
 <h2>⭐ ¡Excelente Trabajo! ⭐</h2>
 <p style="font-size:3rem;">🌟 🌟 🌟 🌟 🌟</p>
-<p>Cada emoción nos ayuda a aprender y crecer.</p>
+<p>Cada emoción nos ayuda a aprender, crecer y ser mejores personas.</p>
 </section>
 
 <footer>
-🦁🐘🐵 Mente Pedagógica - Las Emociones - Preescolar 3 🐰🦒🐼
+🦁🐘🐵 Mente Pedagógica | Las Emociones | Preescolar 3 🐰🦒🐼
 </footer>
 
 </body>
