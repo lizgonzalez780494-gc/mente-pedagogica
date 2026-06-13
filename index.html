@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🌈 Mente Pedagógica - Las Emociones</title>
-<h2 style="color:#FF1493;">
-🐵 ¡Bienvenidos al Mundo Mágico de las Emociones! 🌈
-</h2>
+
 <style>
 *{
 margin:0;
@@ -16,8 +14,16 @@ box-sizing:border-box;
 
 body{
 font-family:'Comic Sans MS',cursive;
-background:linear-gradient(to bottom,#87CEEB,#98FB98,#FFFACD);
+background:linear-gradient(-45deg,#87CEEB,#98FB98,#FFFACD,#FFB6C1);
+background-size:400% 400%;
+animation:fondo 10s ease infinite;
 text-align:center;
+}
+
+@keyframes fondo{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 header{
@@ -36,6 +42,12 @@ font-size:1.3rem;
 color:#6A0DAD;
 }
 
+.bienvenida{
+color:#FF1493;
+padding:15px;
+font-size:2rem;
+}
+
 .animales{
 display:flex;
 justify-content:center;
@@ -43,6 +55,7 @@ flex-wrap:wrap;
 gap:20px;
 padding:20px;
 }
+
 .animal{
 font-size:100px;
 animation:saltar 1.5s infinite alternate;
@@ -136,6 +149,11 @@ border-radius:20px;
 box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 
+.estrellas{
+font-size:40px;
+margin:20px;
+}
+
 footer{
 background:#FFD700;
 padding:20px;
@@ -144,31 +162,18 @@ font-size:1.2rem;
 font-weight:bold;
 }
 </style>
-  body{
-font-family:'Comic Sans MS',cursive;
-background:linear-gradient(-45deg,#87CEEB,#98FB98,#FFFACD,#FFB6C1);
-background-size:400% 400%;
-animation:fondo 10s ease infinite;
-text-align:center;
-}
-
-@keyframes fondo{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
 </head>
-<div style="font-size:40px;margin:20px;">
-⭐ 🌟 ⭐ 🌟 ⭐
-</div>
-  
+
 <body>
 
 <header>
 <h1>🌈 MENTE PEDAGÓGICA 🌈</h1>
-<p>Las Emociones </p>
+<p>Las Emociones - Preescolar 3</p>
 </header>
+
+<h2 class="bienvenida">
+🐵 ¡Bienvenidos al Mundo Mágico de las Emociones! 🌈
+</h2>
 
 <div class="animales">
 <div class="animal">🦁</div>
@@ -197,7 +202,6 @@ text-align:center;
 
 <video controls>
 <source src="video.mp4" type="video/mp4">
-Tu navegador no soporta video.
 </video>
 </section>
 
@@ -206,14 +210,16 @@ Tu navegador no soporta video.
 
 <div class="tarjetas">
 
-<a class="boton"
-href="https://lizgonzalez780494-gc.github.io/mente-pedagogica/cuento.pdf"
-target="_blank">
+<div class="tarjeta">
+<img src="historia de emociones.jpeg">
+<h3>📖 Cuento de las Emociones</h3>
+<a class="boton" href="cuento.pdf" target="_blank">
 📖 Leer Cuento
 </a>
+</div>
 
 <div class="tarjeta">
-<img src="historia de emociones.jpeg" alt="Historia de emociones">
+<img src="historia de emociones.jpeg">
 <h3>📚 Historia de las Emociones</h3>
 <a class="boton" href="historia de emociones.jpeg" target="_blank">
 📚 Ver Historia
@@ -221,7 +227,7 @@ target="_blank">
 </div>
 
 <div class="tarjeta">
-<img src="memorándum.jpeg" alt="Juego de memoria">
+<img src="memorándum.jpeg">
 <h3>🧠 Juego de Memoria</h3>
 <a class="boton" href="https://wordwall.net/es/resource/114878709" target="_blank">
 🎮 Jugar
@@ -229,7 +235,7 @@ target="_blank">
 </div>
 
 <div class="tarjeta">
-<img src="laberinto.jpeg" alt="Laberinto">
+<img src="laberinto.jpeg">
 <h3>🌟 Laberinto</h3>
 <a class="boton" href="laberinto.jpeg" target="_blank">
 Resolver
@@ -237,7 +243,7 @@ Resolver
 </div>
 
 <div class="tarjeta">
-<img src="juego serpientes y escaleras.jpeg" alt="Serpientes y Escaleras">
+<img src="juego serpientes y escaleras.jpeg">
 <h3>🐍 Serpientes y Escaleras</h3>
 <a class="boton" href="juego serpientes y escaleras.jpeg" target="_blank">
 Jugar
@@ -245,7 +251,7 @@ Jugar
 </div>
 
 <div class="tarjeta">
-<img src="material didactico.jpeg" alt="Material Didáctico">
+<img src="material didactico.jpeg">
 <h3>🎨 Material Didáctico</h3>
 <a class="boton" href="material didactico.jpeg" target="_blank">
 🎨 Ver Material
@@ -253,7 +259,7 @@ Jugar
 </div>
 
 <div class="tarjeta">
-<img src="material recortable.jpeg" alt="Material Recortable">
+<img src="material recortable.jpeg">
 <h3>✂️ Material Recortable</h3>
 <a class="boton" href="material recortable.jpeg" target="_blank">
 Explorar
@@ -262,7 +268,6 @@ Explorar
 
 <div class="tarjeta">
 <h3>🔍 Sopa de Letras</h3>
-<p>Encuentra palabras relacionadas con las emociones.</p>
 <a class="boton" href="sopa de letras.pdf" target="_blank">
 Abrir PDF
 </a>
@@ -270,7 +275,6 @@ Abrir PDF
 
 <div class="tarjeta">
 <h3>😊 Juego de Emociones</h3>
-<p>Actividad interactiva.</p>
 <a class="boton" href="https://wordwall.net/resource/111453890" target="_blank">
 Comenzar
 </a>
@@ -278,7 +282,6 @@ Comenzar
 
 <div class="tarjeta">
 <h3>🌈 Mundo Mágico de las Emociones</h3>
-<p>Más juegos y actividades divertidas.</p>
 <a class="boton" href="https://sites.google.com/d/1yaa3fShVck9JpnXIRcMdEAoo7fYUpG1m/p/1H3algaa0E839GfvK2ztCVwQnmg4Pptpu/edit" target="_blank">
 🌟 ¡Explora el Mundo de las Emociones!
 </a>
@@ -297,13 +300,7 @@ Ver Video
 Ver Video
 </a>
 </div>
-<section class="seccion">
-<h2>🏆 ¡Felicidades!</h2>
-<p style="font-size:25px;color:#FF1493;">
-🎉 Has aprendido sobre las emociones 🎉
-</p>
-</section>
-  
+
 <div class="tarjeta">
 <h3>📱 TikTok Mente Pedagógica</h3>
 <a class="boton" href="https://www.tiktok.com/@pedagogica.menete?_r=1&_t=ZS-978E7ZS0LAr" target="_blank">
@@ -315,22 +312,20 @@ Seguir en TikTok
 </section>
 
 <section class="seccion">
-<h2>⭐ ¡Excelente Trabajo! ⭐</h2>
-<p style="font-size:3rem;">🌟 🌟 🌟 🌟 🌟</p>
-<p>Cada emoción nos ayuda a aprender, crecer y ser mejores personas.</p>
+<h2>🏆 ¡Felicidades!</h2>
+<p style="font-size:25px;color:#FF1493;">
+🎉 Has aprendido sobre las emociones 🎉
+</p>
 </section>
 
+<div class="estrellas">
+⭐ 🌟 ⭐ 🌟 ⭐
+</div>
+
 <footer>
-🦁🐘🐵 Mente Pedagógica | Las Emociones  🐰🦒🐼
+🦁🐘🐵 Mente Pedagógica | Las Emociones | 🐰🦒🐼
 </footer>
 
 </body>
 </html>
-<div class="tarjeta">
-<h3>🏅 Diploma de Participación</h3>
-<p>¡Descarga tu reconocimiento!</p>
-<a class="boton" href="#" target="_blank">
-Descargar Diploma
-</a>
-</div>
 
