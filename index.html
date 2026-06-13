@@ -6,68 +6,50 @@
 <title>Mente Pedagógica - Emociones</title>
 
 <style>
-
-/* 🌈 FONDO ANIMADO */
 body{
-font-family:'Comic Sans MS',cursive;
 margin:0;
+font-family:'Comic Sans MS', cursive;
+background:linear-gradient(to bottom,#c2f0ff,#ffd6f6,#fff3b0);
 text-align:center;
-background:linear-gradient(-45deg,#87CEEB,#98FB98,#FFFACD,#FFB6C1);
-background-size:400% 400%;
-animation:fondo 10s ease infinite;
 }
 
-@keyframes fondo{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-/* 🧠 HEADER */
 header{
-background:#FFD700;
+background:#ffcc00;
 padding:20px;
 }
 
-h1{
-color:#FF4500;
-font-size:2.5rem;
+header h1{
+margin:0;
+color:#ff3d7f;
+font-size:40px;
 }
 
-/* 🦁 ANIMALES */
 .animales{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
-padding:15px;
+font-size:60px;
+margin:10px;
 }
 
-.animal{
-font-size:80px;
-transition:transform 0.3s;
-cursor:pointer;
+.seccion{
+padding:20px;
 }
 
-.animal:hover{
-transform:scale(1.3) rotate(10deg);
+h2{
+color:#6a0dad;
 }
 
-/* 🎮 TARJETAS */
 .tarjetas{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:20px;
-padding:20px;
 }
 
 .tarjeta{
 background:white;
-width:280px;
+width:260px;
 border-radius:15px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
 overflow:hidden;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
 transition:0.3s;
 }
 
@@ -77,44 +59,29 @@ transform:scale(1.05);
 
 .tarjeta img{
 width:100%;
-height:160px;
+height:150px;
 object-fit:cover;
 }
 
 .boton{
 display:inline-block;
-background:#FF69B4;
-color:white;
-padding:10px;
 margin:10px;
-border-radius:10px;
+padding:10px 15px;
+background:#ff4da6;
+color:white;
 text-decoration:none;
+border-radius:10px;
 }
 
 .boton:hover{
-background:#FF1493;
+background:#ff1f86;
 }
 
-/* 🎈 GLOBOS */
-.globo{
-position:fixed;
-bottom:-100px;
-font-size:30px;
-animation:subir 8s linear infinite;
+footer{
+background:#ffcc00;
+padding:15px;
+margin-top:20px;
 }
-
-@keyframes subir{
-0%{transform:translateY(0);}
-100%{transform:translateY(-120vh);}
-}
-
-/* 📱 RESPONSIVE */
-@media(max-width:768px){
-.tarjeta{width:90%;}
-.animal{font-size:60px;}
-h1{font-size:2rem;}
-}
-
 </style>
 </head>
 
@@ -122,86 +89,99 @@ h1{font-size:2rem;}
 
 <header>
 <h1>🌈 MENTE PEDAGÓGICA 🌈</h1>
-<p>Aprendiendo las emociones</p>
+<p>Aprendiendo las Emociones</p>
 </header>
 
-<!-- 🦁 ANIMALES -->
 <div class="animales">
-<div class="animal">🦁</div>
-<div class="animal">🐵</div>
-<div class="animal">🐘</div>
-<div class="animal">🐰</div>
-<div class="animal">🦒</div>
+🦁 🐵 🐰 🐼 🐸
 </div>
 
-<!-- 🎵 MUSICA OPCIONAL -->
-<audio autoplay loop controls>
-<source src="musica.mp3" type="audio/mpeg">
-</audio>
+<section class="seccion">
+<h2>😊 Conoce las Emociones</h2>
+<p>😄 😢 😡 😱 😍</p>
+</section>
 
-<!-- 🎮 ACTIVIDADES -->
-<section class="tarjetas">
+<section class="seccion">
+<h2>🎥 Video de las Emociones</h2>
+<video width="80%" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+</section>
 
-<div class="tarjeta">
-<img src="historia-emociones.jpeg">
-<h3>📖 Cuento de las Emociones</h3>
-<a class="boton" href="cuento.pdf" target="_blank">Leer</a>
-</div>
+<section class="seccion">
+<h2>🎮 Actividades</h2>
 
-<div class="tarjeta">
-<img src="historia-emociones.jpeg">
-<h3>📚 Historia</h3>
-<a class="boton" href="historia-emociones.jpeg">Ver</a>
-</div>
+<div class="tarjetas">
 
 <div class="tarjeta">
-<img src="material-didactico.jpeg">
-<h3>🎨 Material Didáctico</h3>
-<a class="boton" href="material-didactico.jpeg">Ver</a>
+<img src="historia de emociones.jpeg">
+<h3>Cuento de las Emociones</h3>
+<a class="boton" href="cuento.pdf" target="_blank">📖 Leer</a>
 </div>
 
 <div class="tarjeta">
-<h3>🧠 Juego Memoria</h3>
+<img src="historia de emociones.jpeg">
+<h3>Historia de las Emociones</h3>
+<a class="boton" href="historia de emociones.jpeg" target="_blank">📚 Ver</a>
+</div>
+
+<div class="tarjeta">
+<img src="material didactico.jpeg">
+<h3>Material Didáctico</h3>
+<a class="boton" href="material didactico.jpeg" target="_blank">🎨 Ver</a>
+</div>
+
+<div class="tarjeta">
+<img src="laberinto.jpeg">
+<h3>Laberinto</h3>
+<a class="boton" href="laberinto.jpeg" target="_blank">Jugar</a>
+</div>
+
+<div class="tarjeta">
+<img src="juego serpientes y escaleras.jpeg">
+<h3>Serpientes y Escaleras</h3>
+<a class="boton" href="juego serpientes y escaleras.jpeg" target="_blank">Jugar</a>
+</div>
+
+<div class="tarjeta">
+<img src="material recortable.jpeg">
+<h3>Material Recortable</h3>
+<a class="boton" href="material recortable.jpeg" target="_blank">Ver</a>
+</div>
+
+<div class="tarjeta">
+<img src="memorándum.jpeg">
+<h3>Juego de Memoria</h3>
 <a class="boton" href="https://wordwall.net/es/resource/114878709" target="_blank">Jugar</a>
 </div>
 
 <div class="tarjeta">
-<h3>🐍 Serpientes</h3>
-<a class="boton" href="juego serpientes y escaleras.jpeg">Jugar</a>
+<h3>Sopa de Letras</h3>
+<a class="boton" href="sopa de letras.pdf" target="_blank">Abrir</a>
 </div>
 
 <div class="tarjeta">
-<h3>🔍 Sopa de letras</h3>
-<a class="boton" href="sopa de letras.pdf">Abrir</a>
+<h3>🌐 Más Actividades</h3>
+<a class="boton" href="https://sites.google.com/d/1yaa3fShVck9JpnXIRcMdEAoo7fYUpG1m/p/1H3algaa0E839GfvK2ztCVwQnmg4Pptpu/edit" target="_blank">Entrar</a>
 </div>
 
 <div class="tarjeta">
-<h3>🏅 Diploma</h3>
-<p>¡Felicidades!</p>
-<a class="boton" href="#">Descargar</a>
+<h3>📺 YouTube</h3>
+<a class="boton" href="https://youtu.be/tqOers0tWvI?si=Atnb33DzNohbM0wd" target="_blank">Video 1</a>
+<a class="boton" href="https://youtu.be/HjzOfJTqg70?si=9eGTiwKHmH1oEQG7" target="_blank">Video 2</a>
 </div>
 
+<div class="tarjeta">
+<h3>📱 TikTok</h3>
+<a class="boton" href="https://www.tiktok.com/@pedagogica.menete?_r=1&_t=ZS-978E7ZS0LAr" target="_blank">Seguir</a>
+</div>
+
+</div>
 </section>
-
-<!-- 📸 GALERIA -->
-<section>
-<h2>📸 Galería</h2>
-<img src="material-didactico.jpeg" width="200">
-<img src="historia-emociones.jpeg" width="200">
-</section>
-
-<!-- ⭐ FELICITACIÓN -->
-<section>
-<h2>⭐ ¡Excelente trabajo! ⭐</h2>
-<p>🎉 Has aprendido sobre emociones 🎉</p>
-</section>
-
-
 
 <footer>
-🦁 Mente Pedagógica 🐵
+🌈 Mente Pedagógica - Educación Emocional
 </footer>
 
 </body>
 </html>
-
